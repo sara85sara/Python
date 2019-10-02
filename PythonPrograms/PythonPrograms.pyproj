@@ -1,0 +1,59 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>0d9dabe1-4fef-4072-b8c2-6b36ad15ffcd</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>PythonPrograms.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PythonPrograms</Name>
+    <RootNamespace>PythonPrograms</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AddUniqueItemInList.py" />
+    <Compile Include="ComputePay.py" />
+    <Compile Include="CountChar.py" />
+    <Compile Include="Factorial.py" />
+    <Compile Include="FetchEmailInFile.py" />
+    <Compile Include="FindAndGet.py" />
+    <Compile Include="FindContentInFile.py" />
+    <Compile Include="Grade.py" />
+    <Compile Include="HourlyRate.py" />
+    <Compile Include="InputExample.py" />
+    <Compile Include="ListInFile.py" />
+    <Compile Include="MostUsedWord.py" />
+    <Compile Include="NameToChar.py" />
+    <Compile Include="PythonPrograms.py" />
+    <Compile Include="ReadFileAndCalculate.py" />
+    <Compile Include="ReadFileContent.py" />
+    <Compile Include="StringsInList.py" />
+    <Compile Include="StringSlice.py" />
+    <Compile Include="sumofseries.py" />
+    <Compile Include="trycatch.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="mbox-short.txt" />
+    <Content Include="romeo.txt" />
+    <Content Include="words.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
